@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <title>Cachorros</title>
+    </head>
+    <body>
+        <h1>Raças de cachorro</h1>
+        <p>Os tópicos abordados serão:</p>
+        <ul>
+            <li>Raças mais conhecidas</li>
+            <li>Raças mais caras</li>
+            <li>Vira-latas</li>
+        </ul>
+        <h2>Raças mais conhecidas</h2>
+        <style>
+            table, th, td {
+                border:2px solid black;
+            }
+            table{
+                width: 70%;
+            }
+        </style>
+
+        <table>
+        <tr>
+            <th>Raça</th>
+            <th colspan="3">Países populares</th>
+        </tr>
+        <tr>
+            <td>Labrador retriever</td>
+            <td>Canada</td>
+            <td>EUA</td>
+            <td>Inglaterra</td>
+        </tr>
+        <tr>
+            <td>Bulldog francês</td>
+            <td>França</td>
+            <td>Inglaterra</td>
+            <td>EUA</td>
+        </tr>
+        <tr>
+            <td>Golden retriever</td>
+            <td>Inglaterra</td>
+            <td>EUA</td>
+            <td>Alemanha</td>
+        </tr>
+        </table>
+        <style>
+            table, th, td {
+                border:1px solid black;
+            }
+            table{
+                width: 70%;
+            }
+        </style>
+        <table><br>
+            <caption><b>Raças mais caras</b></caption>
+            <tr>
+                <th>Raça</th>
+                <th>Gastos</th>
+            </tr>
+            <tr>
+                <td>Spitz alemão</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>Pug</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>Saluki</td>
+                <td>7000</td>
+            </tr>
+        </table>
+        <h2>Vira-latas</h2>
+        <p>Motivos para adotar um vira-lata:</p>
+
+        <ol>
+            <li>Muito amigáveis.</li>
+            <li>Maior tempo de vida.</li>
+            <li>Ficam doentes com menas facilidade.</li>
+            <li>Todos são diferentes, difícil encontrar um identico.</li>
+        </ol>
+
+        <style>
+            table, th, td {
+                border:1px solid black;
+            }
+            table{
+                width: 70%;
+            }
+        </style>
+        <h3>Quantidade de animais abandonados por ano</h3>
+
+        <table>
+            <tr>
+                <th>Ano</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>2314</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>2583</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>3546</td>
+            </tr>
+        </table><br>
+        <p><b>Pesquisa para estudo</b></p>
+
+        <form action="enviar.py">
+            <fieldset>
+                <legend> Dados pessoais:</legend>
+                    <b>Nome:</b><br>
+                    <input type="text" name="nome"><br>
+                    <b>Sobrenome:</b><br>
+                    <input type="text" name="sobrenome"><br>
+                    <p><b>Estado civil:</b></p>
+                    <input type="radio" name="estado civil" value="solteiro" checked> Solteiro<br>
+                    <input type="radio" name="estado civil" value="casado"> Casado<br>
+                    <input type="radio" name="estado civil" value="outros"> Outros<br>
+                    <p><b>Data de nascimento</b></p>
+                    <input type="datetime-local"><br>
+                    <br><input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+            </fieldset>
+        </form>
+        <form action="enviar.py">
+            <fieldset>
+                <legend> Informações relacionadas a cachorros:</legend>
+                    <b>Você tem alguma preferência ao escolher um cachorro?</b><br>
+                    <input type="checkbox" name="estilo" value="raça"> Raça<br>
+                    <input type="checkbox" name="estilo" value="cor"> Cor<br>
+                    <input type="checkbox" name="estilo" value="tamanho"> Tamanho<br>
+                    <input type="checkbox" name="estilo" value="idade"> Idade<br>
+                    <input type="checkbox" name="estilo" value="sem preferência"> Sem preferência<br>
+                    <br><b>Você tem cachorro e ele é de raça?</b><br>
+                <select name="Tem cachorro e a raça">
+                    <option value="Sim, é de raça">Sim, ele é de raça</option>
+                    <option value="Sim, não é de raça" selected>Sim, não é de raça</option>
+                    <option value="Não tenho">Não tenho</option><br>
+                </select>
+                <br><br><br><textarea name="sugestão" rows="10" cols="40">Digite uma sugestão para diminuir o abandono de animais.</textarea><br>
+                    <br><input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+            </fieldset>
+        </form>
+        <form action="enviar.py">
+            <fieldset>
+                <legend>E-mail para contato:</legend>
+                    <b>Email:</b><br>
+                    <input type="email"><br>
+                    <br><input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+            </fieldset>
+        </form>
+    </body>
